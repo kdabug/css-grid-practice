@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+main {
+  height: 500px;
+  background-color: lightgreen;
+  border-top: 2px solid black;
+}
+h1 {
+  margin: 0;
+  line-height: 500px;
+  text-align: center;
+}
+img {
+  width: 100px;
+}
+header {
+  background-color: lightblue;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 10% 30% 10% 40% 10%;
+  /* display: flex;
+    justify-content: space-around; */
+}
+#logo-area {
+  background-color: yellow;
+  display: grid;
+  grid-column-start: 2;
+  /* display: flex;
+    align-items: center; */
+}
+nav {
+  background-color: pink;
+  grid-column-start: 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  /* display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around; */
+}
