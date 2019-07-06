@@ -5,39 +5,45 @@ main {
   height: 500px;
   background-color: lightgreen;
   border-top: 2px solid black;
+  display: grid;
 }
 h1 {
   margin: 0;
   line-height: 500px;
   text-align: center;
 }
-img {
-  width: 100px;
-}
 header {
-  background-color: lightblue;
   height: 100px;
   display: grid;
-  grid-template-columns: 10% 30% 10% 40% 10%;
+  grid-template-rows: 50% 50%;
   /* display: flex;
     justify-content: space-around; */
-}
-#logo-area {
-  background-color: yellow;
-  display: grid;
-  grid-column-start: 2;
-  /* display: flex;
-    align-items: center; */
 }
 nav {
-  background-color: pink;
-  grid-column-start: 4;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 50% 25% 25%;
   align-items: center;
   justify-items: center;
-  /* display: flex;
-    align-items: center;
-    width: 40%;
-    justify-content: space-around; */
+  background-color: teal;
+}
+footer {
+  background-color: teal;
+  height: 100px;
+}
+.title {
+  background-color: lightblue;
+  width: 100%;
+}
+.four-small-box {
+}
+.two-small-box {
+}
+.large-blue-box {
+  background-color: blue;
+}
+.light-red-rectangle {
+  background-color: pink;
+}
+.small-red-box {
+  background-color: red;
 }
