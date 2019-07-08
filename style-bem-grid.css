@@ -1,20 +1,22 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-main {
-  height: 500px;
-  background-color: white;
   display: grid;
-  grid-template-rows: 66% 33%;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
 }
 h1 {
   margin: 0;
   line-height: 500px;
   text-align: center;
 }
-header {
+.c-header {
+  grid-column: 1 / span 12;
   height: 25vh;
   display: grid;
   grid-template-rows: 50% 50%;
@@ -22,7 +24,8 @@ header {
   align-items: center;
   background-color: #d8f3ff;
 }
-nav {
+.c-header__nav {
+  grid-column: 1 / span 12;
   display: grid;
   grid-template-columns: 70% 15% 15%;
   align-items: center;
@@ -30,47 +33,47 @@ nav {
   text-align: left;
   padding-left: 5vw;
 }
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 100%;
+.c-header__title {
+  text-align: center;
 }
-
-footer {
-  background-color: #84afe2;
-  height: 100px;
-}
-div {
+.c-main {
+  grid-column: 1 / span 12;
+  height: 500px;
+  background-color: white;
   display: grid;
+  grid-template-rows: 66% 33%;
+  grid-template-columns: 50% 50%;
 }
-
-.large-blue-box {
+.c-main div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: auto;
+}
+.c-large-blue-box {
   background-color: #84afe2;
   height: 85%;
   width: 85%;
   justify-self: center;
   align-self: center;
 }
-.light-red-rectangle {
+.c-light-red-rectangle {
   background-color: #ffe4de;
   height: 70%;
   width: 85%;
   justify-self: center;
   align-self: center;
 }
-.small-red-box {
+.c-small-red-box {
   background-color: #e19990;
   height: 70%;
   width: 70%;
   justify-self: center;
   align-self: center;
 }
-.four-small-box {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-}
-.two-small-box {
-  display: grid;
-  grid-template-columns: 50% 50%;
+
+.c-footer {
+  grid-column: 1 / span 12;
+
+  background-color: #84afe2;
+  height: 100px;
 }
